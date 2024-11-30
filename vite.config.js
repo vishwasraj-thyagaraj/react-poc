@@ -1,7 +1,32 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-// v2
-// https://vite.dev/config/
+import { federation } from '@module-federation/vite';
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    federation({
+      name: "d42RemoteApp",
+      manifest: true,
+      filename: "remoteEntry.js",
+      exposes: {
+        "./d42RemoteApp": "./src/remote-entry.js",
+      },
+      remotes: {},
+      shared: {
+        react: {
+          requiredVersion: '18.3.1',
+          singleton: true,
+        },
+        'react-dom': {
+          requiredVersion: '18.3.1',
+          singleton: true,
+        },
+        antd: {
+          requiredVersion: '5.21.6',
+          singleton: true,
+        },
+      },
+    }),
+    react()
+  ],
 })
