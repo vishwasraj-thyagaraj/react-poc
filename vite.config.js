@@ -11,7 +11,6 @@ export default defineConfig({
       exposes: {
         "./d42RemoteApp": "./src/remote-entry.js",
       },
-      remotes: {},
       shared: {
         react: {
           requiredVersion: '18.3.1',
