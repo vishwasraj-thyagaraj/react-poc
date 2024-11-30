@@ -1,12 +1,7 @@
 import Table from './Table';
 
 function App() {
-  return (
-    <>
-      <h1>D42</h1>
-      <div><Table/></div>
-    </>
-  )
+  return  <div className='d42-table'><Table/></div>;
 }
 
 export default App
