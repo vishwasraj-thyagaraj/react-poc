@@ -54,23 +54,23 @@ const data = [
   {
     key: '1',
     name: 'John Brown',
-    age: 32,
+    age: 30,
     address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
+    tags: ['developer'],
   },
   {
     key: '2',
     name: 'Jim Green',
-    age: 42,
+    age: 25,
     address: 'London No. 1 Lake Park',
-    tags: ['loser'],
+    tags: ['developer'],
   },
   {
     key: '3',
     name: 'Joe Black',
-    age: 32,
+    age: 35,
     address: 'Sydney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
+    tags: ['developer'],
   },
 ];
 
