@@ -26,6 +26,9 @@ export default defineConfig({
         },
       },
     }),
-    react()
+    react(),
   ],
+  build: {
+    target: 'esnext'
+  }
 })
