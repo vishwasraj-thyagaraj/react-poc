@@ -57,7 +57,13 @@ export const AssetsTable = () => {
 		'Access-Control-Allow-Credentials': 'true'
 	}
   };
-  const hostname = `${window.location.protocol}//${window.location.hostname}/api/_`;
+
+  let hostname;
+  if(window.location.hostname.includes('freshservice-dev')) {
+    hostname = `${window.location.protocol}//${window.location.hostname}:4000/api/_`;
+  } else {
+    hostname = `${window.location.protocol}//${window.location.hostname}/api/_`;
+  }
 
   useEffect(() => {
     fetch(hostname + "/assets", options)
