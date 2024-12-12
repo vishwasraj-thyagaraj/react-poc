@@ -30,5 +30,12 @@ export default defineConfig({
   ],
   build: {
     target: 'esnext'
-  }
+  },
+  base: "https://react-remote-app.pages.dev",
+  server: {
+    port: 5173,
+    cors: true,
+    strictPort: true,
+    host: 'localhost.freshservice-dev.com'
+  },
 })
