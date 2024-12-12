@@ -143,8 +143,6 @@ export const AssetsTable = () => {
 
   let data = [];
 
-  console.log(assetsData, locationData, assetTypesData);
-
   data = assetsData.map((asset) => {
     return {
       ...asset,
