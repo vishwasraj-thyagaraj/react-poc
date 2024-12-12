@@ -13,15 +13,15 @@ export default defineConfig({
       },
       shared: {
         react: {
-          requiredVersion: '18.3.1',
+          requiredVersion: '16.14.0',
           singleton: true,
         },
         'react-dom': {
-          requiredVersion: '18.3.1',
+          requiredVersion: '16.14.0',
           singleton: true,
         },
         antd: {
-          requiredVersion: '5.21.6',
+          requiredVersion: '5.22.4',
           singleton: true,
         },
       },
